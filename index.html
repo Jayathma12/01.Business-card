@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html long="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewpoint" content="width=device-width", initial-scale="1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .Business-Card{
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            height: 520px;
+            width: 300px;
+            overflow: hidden;
+            border: 2px solid #3498db;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .Profile-image{
+            height: 65%;
+            width: 100%;
+            border: #010008;
+            border-radius: 20px;
+        }
+
+        .header{
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .contact-info{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .Name{
+            font-size: 1.5em;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .Job-title{
+            font-size: 1em;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .Contact-details div{
+            margin-bottom: 5px;
+        }
+
+        .Social-Links a{
+            margin-right: 30px;
+            text-decoration: none;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+
+        .Business-Card:hover{
+            transform: scale(1.05);
+        }
+
+        .Skill-card{
+            top: 48px;
+            position: absolute;
+            background: rgba(255, 255, 255, 0.3);
+            width: 100%;
+            backdrop-filter: blur(40px);
+            height: 0%;
+            overflow: hidden;
+            transition: height 0.3s ease-in-out;
+        }
+
+        .Skill-title{
+            margin-left: 30px;
+            font-size: 30px;
+            margin-top: 70px;
+            font-weight: bold;
+        }
+
+        .Skill-card ul{
+            margin-left: 30px;
+        }
+
+        .Skill-card li{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .Business-Card:hover .Skill-card{
+            height: 86%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="Business-Card">
+        <div class="header"> Business Card</div>
+        <div class="contact-info">
+            <img class="Profile-image" src="Niluka.jpg" alt=""/>
+            <div class="Name"> Niluka Jayathma</div>
+            <div class="Job-title"> Graphics Designer</div>
+            <div class="Contact-details">
+                <div>Email: nilukaw8@gmail.com</div>
+                <div>Phone: 071-4903746</div>
+                <div>Address: No-81,Ruwan Eliya, Nuwara Eliya</div>
+            </div>
+            <div class="Social-Links">
+                <a href="">LinkedIn</a>
+                <a href="">Github</a>
+                <a href="">Behance</a>
+            </div>
+        </div>
+        <div class="Skill-card">
+            <div class="Skill-title">My Skill</div>
+            <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Canva</li>
+                <li>Premiere pro</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+    </div>        
+</body>
+</html>
